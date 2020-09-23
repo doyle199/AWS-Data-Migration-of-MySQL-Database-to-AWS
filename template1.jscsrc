@@ -1,0 +1,47 @@
+•	{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "1",
+      "object-locator": {
+        "schema-name": "DMS_SAMPLE",
+        "table-name": "%"
+      },
+      "rule-action": "include"
+    },
+   {
+      "rule-type": "transformation",
+      "rule-id": "6",
+      "rule-name": "6",
+      "rule-action": "convert-lowercase",
+      "rule-target": "schema",
+      "object-locator": {
+        "schema-name": "%"
+      }
+    },
+    {
+      "rule-type": "transformation",
+      "rule-id": "7",
+      "rule-name": "7",
+      "rule-action": "convert-lowercase",
+      "rule-target": "table",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "%"
+      }
+    },
+    {
+      "rule-type": "transformation",
+      "rule-id": "8",
+      "rule-name": "8",
+      "rule-action": "convert-lowercase",
+      "rule-target": "column",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "%",
+        "column-name": "%"
+      }
+    }
+  ]
+}    
